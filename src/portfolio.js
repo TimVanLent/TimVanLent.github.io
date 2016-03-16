@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-app.use(express.static('./src/views'));
+app.use(express.static('./'));
 
 app.set('views', './src/views');
 
