@@ -1,0 +1,221 @@
+doctype html
+html(lang='en')
+		head
+				meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+				meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
+				title timvanlent
+				// CSS
+				link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+				link(href='/css/materialize.css', type='text/css', rel='stylesheet', media='screen,projection')
+				link(href='/css/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+		body(onload='draw();')
+				.banner1#index-banner.parallax-container
+						.section.no-pad-bot
+								nav.invisible.navbar-inner
+										.row.center
+												h4.navbarItem2.col.s2.flow-text.hide-on-small-and-down timvanlent
+												h4.navbarItem2.col.s1.flow-text.hide-on-small-and-down.black-text ·
+												a.navbarItem.col.s2.flow-text.hide-on-small-and-down(href='#about') about 
+												a.navbarItem.col.s2.flow-text.hide-on-small-and-down(href='#portfolio') portfolio
+												a.navbarItem.col.s2.flow-text.hide-on-small-and-down(href='#contact') contact  
+								.container
+										.row
+										.row
+										.row
+										.row.center
+												br
+												br
+												h5.titel.header.col.s12.light.red-text.lighten full-stack web developer and designer
+												br
+												h6.titel.header.col.s12.condensed.light HTML5 · CSS3 · Javascript · jQuery ·   Node.js
+										.row
+										.row
+										.row
+										br
+						.parallax
+								img#banner(src='grey.jpg', alt='Unsplashed background img 1')
+						canvas.canvas2#canvas2(width='100', height='100')			
+				nav#nav2.white.nav2(role='navigation')
+						.nav-wrapper.container
+								.row
+										a.navbarItem2.col.s2.flow-text(href='#') TVL
+										a.navbarItem2.col.s2.flow-text.hide-on-small-and-down(href='#about') about 
+										a.navbarItem2.col.s2.flow-text.hide-on-small-and-down(href='#portfolio') portfolio
+										a.navbarItem2.col.s2.flow-text.hide-on-small-and-down(href='#contact') contact
+										ul#nav-mobile.dropdown-content.right
+												li
+														a(href='#') about
+												li
+														a(href='#') portfolio
+												li
+														a(href='#') contact
+										a#button.dropdown-button.hide-on-med-and-up.right(href='#', data-activates='nav-mobile')
+												i.material-icons menu
+				.grijs.container
+						.container					
+								.section
+										// Icon Section
+										.row
+											h4.center-align#about About
+											
+											.row#about.center-align
+													.col.s12.m6
+														.icon-block
+															h2.center.brown-text
+																i.material-icons flash_on
+															h5.center developer
+															p.light.brown-text
+																| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.
+													.col.s12.m6
+														.icon-block
+															h2.center.brown-text
+																i.material-icons group
+															h5.center designer
+															p.light.brown-text
+																| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
+													.col.s12.m4
+				#index-banner.parallax-container
+						canvas.canvas#canvas(width='100', height='100')
+						.row
+						.row.center
+							h3.titel2.header.col.s12.white-text#portfolio portfolio
+							.container.hide-on-med-and-down
+								#gallery.row
+									#een.col.m3.kaart.card.teal.hoverable
+											.card-image
+												img(src='background3.jpg')
+									#twee.col.m6.kaart.card.red.hoverable
+											.card-image
+												img(src='background2.jpg')
+									#drie.col.m3.kaart.card.red.hoverable
+											.card-image
+												img(src='background3.jpg')
+									#vier.col.m6.kaart.card.red.hoverable
+											.card-image
+												img(src='grey.jpg')
+									#vijf.col.m3.kaart.card.red.hoverable
+											.card-image
+												img(src='scotoe.jpg')
+									#zes.col.m3.kaart.card.teal.hoverable
+											.card-image
+												img(src='background2.jpg')
+								.row					
+							.hide-on-large-only#nomargin
+								.row					
+								#scroll
+									.wrap
+										#een.col.s2.kaart.card.teal.hoverable
+												.card-image
+													img(src='background3.jpg')
+										#twee.col.s2.kaart.card.red.hoverable
+												.card-image
+													img(src='background2.jpg')
+										#drie.col.s2.kaart.card.red.hoverable
+												.card-image
+													img(src='background3.jpg')
+										#vier.col.s2.kaart.card.red.hoverable
+												.card-image
+													img(src='grey.jpg')
+										#vijf.col.s2.kaart.card.red.hoverable
+												.card-image
+													img(src='scotoe.jpg')
+										#zes.col.s2.kaart.card.teal.hoverable
+												.card-image
+													img(src='background2.jpg')
+						.parallax
+							img#concrete(src='Office-Wallpaper.jpg', alt='Unsplashed background img 3')
+						canvas.canvas3#canvas3(width='100', height='100')
+
+				footer#footer.page-footer.teal
+						.container.center
+							.section.center
+								// Icon Section
+								.row.center
+									.col.s12
+										h5.left-align.white-text.thin contact
+										p#contact.left-align.thin
+											| lentvantim@hotmail.com
+									.col.s6.left-align
+										a(href='https://nl.linkedin.com/in/tim-van-lent-73b68b80')
+											img.linkedinwit(src='linkedin2.png')
+										a(href='https://github.com/TimVanLent')
+											img.linkedinzwart(src='linkedinzwart.png' href='https://github.com/TimVanLent')
+									.col.s4.m2
+										a(href='https://github.com/TimVanLent')
+											img.githubwit(src='githubwit.png')
+										img.githubzwart(src='githubzwart.png' 
+										href='https://github.com/TimVanLent')
+									.col.s2
+
+								.row
+
+
+
+
+
+						.footer-copyright
+								.container
+									.row.right-align
+										| Made by me
+				// Scripts
+				script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+				script(src='js/materialize.js')
+				script(src='js/init.js')
+	script.
+		function draw() {
+			var canvas = document.getElementById('canvas');
+			var canvas2 = document.getElementById('canvas2');
+			var canvas3 = document.getElementById('canvas3');
+			if (canvas.getContext){
+				var ctx = canvas.getContext('2d');
+
+				ctx.fillStyle = '#26a69a';
+	
+				ctx.beginPath();
+				ctx.moveTo(0,0);
+				ctx.lineTo(100,0);
+				ctx.lineTo(100,35);
+				ctx.shadowBlur = 8;
+				ctx.shadowOffsetY = 2;
+				ctx.shadowColor = "black";
+				ctx.fill();
+
+				var ctq = canvas2.getContext('2d');
+
+				ctq.fillStyle = '#000';
+				ctq.beginPath();
+				ctq.moveTo(0,100);
+				ctq.lineTo(0,65);
+				ctq.lineTo(100,100);
+				ctq.shadowBlur = 8;
+				ctq.shadowOffsetY = 2;
+				ctq.shadowColor = "black";
+				ctq.fill();	
+
+				var ctr = canvas3.getContext('2d');
+				
+				ctr.fillStyle = '#26a69a';
+				ctr.beginPath();
+				ctr.moveTo(0,100);
+				ctr.lineTo(0,65);
+				ctr.lineTo(100,100);
+				ctr.shadowBlur = 8;
+				ctr.shadowOffsetY = 2;
+				ctr.shadowColor = "black";
+				ctr.fill();
+
+			}
+		}
+
+		$('#een , #twee , #drie, #vier, #vijf, #zes').hover(function(){
+			$(this).siblings().not("this").toggleClass('kaart', 1000).css("opacity", 0.5);
+		})	
+		$('.grijs').hover(function(){
+	
+			$(".canvas").toggleClass('canvasRL');
+			$(".canvas2").toggleClass('canvasLR');
+		})
+
+		$("#footer").hover(function(){
+			$(".canvas3").toggleClass('canvasLR');
+		})

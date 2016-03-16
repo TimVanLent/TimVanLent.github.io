@@ -1,0 +1,279 @@
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 120;
+    border-top: 0;
+}
+.appear{
+   color: #444 !important;
+}
+
+.portfolio{
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+#scroll {
+    width: 100%;
+    height: 180px;
+    overflow: auto;
+    white-space: nowrap;
+    box-shadow: 0 0 10px #000;
+}
+#scroll img, #gallery img {
+  height: 180px;
+}
+
+#nomargin {
+  margin: 0 0 0 0 !important;
+}
+
+.wrap{
+  width:2000px;
+}
+/*.jantje{
+  position: relative;
+  z-index: -1;
+}
+*/
+.kaart{
+  height: 180px;
+/*  padding: 0 0 0 0 !important;
+  margin: 0 0 0 0 !important;*/
+  opacity: 1 !important;
+  -webkit-transition-property: opacity;
+  -bewkit-transition-duration: 1000ms;
+  transition-property: opacity;
+  transition-duration: 1000ms;
+}
+
+#banner {
+width:auto;
+}
+.navbarItem2 {
+    color: #000;
+    -webkit-transition-property: color;
+    -bewkit-transition-duration: 400ms;
+    transition-property: color;
+    transition-duration: 400ms;
+}
+
+.navbarItem {
+    color: #000;
+    -webkit-transition-property: color;
+    -bewkit-transition-duration: 400ms;
+    transition-property: color;
+    transition-duration: 400ms;
+}
+.titel1 {
+  text-shadow:0 1px 1px #212121;
+}
+
+.titel {
+  text-shadow:0 1px 1px #212121;
+}
+
+.titel2 {
+  text-shadow:0 1px 1px #000;
+  position: relative !important;
+  top: 50%;
+  z-index: 2;
+  clear: both !important;
+  display
+}
+.linkedinwit, .githubwit {
+  position: absolute;
+  z-index: 2;
+}
+.linkedinzwart, .githubzwart{
+  position: absolute;
+  z-index: 1
+  -webkit-transition-property: z-index;
+  -bewkit-transition-duration: 400ms;
+  transition-property: z-index;
+  transition-duration: 400ms;
+}
+
+.linkedinwit:hover, .githubwit:hover{
+  opacity: 0 !important;
+
+  
+}
+#z-index {
+  z-index:100;
+}
+
+#about {
+  color: #000;
+
+}
+
+a:hover {
+  color: #26a69a !important;
+
+} 
+
+#button {
+  color: #444;
+}
+
+/*.nav2{
+  display:none;
+}*/
+
+.navbar-inner {
+    background:transparent;
+    box-shadow: 0;
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+}
+
+.canvas{
+    position: absolute;
+    /*margin-top: 8px;*/
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+    top: 0;
+    right:-100%;
+    border-top: 0;
+    -webkit-transition-property: right;
+    -bewkit-transition-duration: 2000ms;
+    transition-property: right;
+    transition-duration: 2000ms;
+}
+
+.canvas2{
+    position: absolute;
+    width: 100%;
+    z-index: 101;
+    border-bottom: 0;
+    height: 100px;
+   /* margin-bottom: 8px;*/
+    bottom: 0;
+    left:-100%;
+    -webkit-transition-property: left;
+    -bewkit-transition-duration: 2000ms;
+    transition-property: left;
+    transition-duration: 2000ms;  
+}
+
+.canvas3{
+    position: absolute;
+    width: 100%;
+    z-index: 101;
+    bottom: 0;
+    height: 100px;
+    left:-100%;
+    -webkit-transition-property: left;
+    -bewkit-transition-duration: 2000ms;
+    transition-property: left;
+    transition-duration: 2000ms;      
+}
+
+.canvasRL {
+    right:0%;
+    -webkit-transition-property: right;
+    -bewkit-transition-duration: 2000ms;
+    transition-property: right;
+    transition-duration: 2000ms;
+}
+
+.canvasLR{
+    left:0%;
+    -webkit-transition-property: left;
+    -bewkit-transition-duration: 2000ms;
+    transition-property: left;
+    transition-duration: 2000ms;    
+}
+
+
+.overkoepelendeContainer {
+  background-color: transparent !important;
+  opacity: 0;
+  z-index: -1;
+  position: relative;
+}
+
+.grijs {
+  margin: 0;
+  width:100%; 
+  padding: 10.750px;
+  background-color: #fff;
+  box-shadow: -2px 0 8px #000;
+
+}
+
+
+.nav2 {
+  display:none !important;
+}
+
+/*body {
+  background-color: rgb(128, 128, 128);
+}
+/*----------------------------*/
+
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+nav ul a,
+nav .brand-logo {
+  color: #444;
+  opacity: 0.9;
+}
+
+p {
+  line-height: 2rem;
+  color: #fff;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 400px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+}
+  
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}

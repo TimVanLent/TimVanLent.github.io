@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>timvanlent</title>
+    <!-- CSS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+  </head>
+  <body onload="draw();">
+    <div id="index-banner" class="banner1 parallax-container">
+      <div class="section no-pad-bot">
+        <nav class="invisible navbar-inner">
+          <div class="row center">
+            <h4 class="navbarItem2 col s2 flow-text hide-on-small-and-down">timvanlent</h4>
+            <h4 class="navbarItem2 col s1 flow-text hide-on-small-and-down black-text">·</h4><a href="#about" class="navbarItem col s2 flow-text hide-on-small-and-down">about </a><a href="#portfolio" class="navbarItem col s2 flow-text hide-on-small-and-down">portfolio</a><a href="#contact" class="navbarItem col s2 flow-text hide-on-small-and-down">contact  </a>
+          </div>
+        </nav>
+        <div class="container">
+          <div class="row"></div>
+          <div class="row"></div>
+          <div class="row"></div>
+          <div class="row center"><br><br>
+            <h5 class="titel header col s12 light">full-stack web developer and designer</h5><br>
+            <h6 class="titel header col s12 condensed light">HTML5 · CSS3 · Javascript · jQuery ·   Node.js</h6>
+          </div>
+          <div class="row"></div>
+          <div class="row"></div>
+          <div class="row"></div><br>
+        </div>
+      </div>
+      <div class="parallax"><img id="banner" src="grey.jpg" alt="Unsplashed background img 1"></div>
+      <canvas id="canvas2" width="100" height="100" class="canvas2">      </canvas>
+    </div>
+    <nav id="nav2" role="navigation" class="white nav2">
+      <div class="nav-wrapper container">
+        <div class="row"><a href="#" class="navbarItem2 col s2 flow-text">TVL</a><a href="#about" class="navbarItem2 col s2 flow-text hide-on-small-and-down">about </a><a href="#portfolio" class="navbarItem2 col s2 flow-text hide-on-small-and-down">portfolio</a><a href="#contact" class="navbarItem2 col s2 flow-text hide-on-small-and-down">contact</a>
+          <ul id="nav-mobile" class="dropdown-content right">
+            <li><a href="#">about</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">contact</a></li>
+          </ul><a id="button" href="#" data-activates="nav-mobile" class="dropdown-button hide-on-med-and-up right"><i class="material-icons">menu</i></a>
+        </div>
+      </div>
+    </nav>
+    <div class="grijs container">
+      <div class="container">
+        <div class="section">
+          <div class="row">
+            <h4 id="about" class="center-align">about</h4>
+            <div id="about" class="row center-align">
+              <div class="col s12 m6">
+                <div class="icon-block">
+                  <h2 class="center brown-text"><i class="material-icons">code</i></h2>
+                  <h5 class="center">developer</h5>
+                  <p class="light brown-text">I just recently discovered that I have always been a developer. Primarely driven by joy I spend most of my days coding ever since. Being challenged in developing is a necessary part of the fun. Fortunately the amount of challenge will be preserved as long as I aim to write more impressive code. So I will.</p>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="icon-block">
+                  <h2 class="center brown-text"><i class="material-icons">visibility</i></h2>
+                  <h5 class="center">designer</h5>
+                  <p class="light brown-text">
+                  Being a visually operating person, recognizing and designing (self proclaimed) aesthetically appealing visuals is what I do instinctively. If my mom is to believed, I was drawing recognizable organic figures before I was able to walk, and my walking is pretty good.   
+                  </p>
+                </div>
+              </div>
+              <div class="col s12 m4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="index-banner" class="parallax-container">
+      <canvas id="canvas" width="100" height="100" class="canvas"></canvas>
+      <div class="row"></div>
+      <div id="portfolio" class="row center">
+        <h3 class="titel2 header col s12 white-text">portfolio</h3>
+        <div class="container hide-on-med-and-down">
+          <div id="gallery" class="row">
+            <div id="een" class="col m3 kaart card teal hoverable">
+              <div class="card-image"><a href="https://github.com/TimVanLent"><img src="background3.jpg"></a></div>
+            </div>
+            <div id="twee" class="col m6 kaart card red hoverable">
+              <div class="card-image"><a href="https://github.com/TimVanLent"><img src="background2.jpg"></a></div>
+            </div>
+            <div id="drie" class="col m3 kaart card red hoverable">
+              <div class="card-image"><a href="https://github.com/TimVanLent"><img src="background3.jpg"></a></div>
+            </div>
+            <div id="vier" class="col m6 kaart card red hoverable">
+              <div class="card-image"><a href="https://github.com/TimVanLent"><img src="grey.jpg"></a></div>
+            </div>
+            <div id="vijf" class="col m3 kaart card red hoverable">
+              <div class="card-image"><a href="https://github.com/TimVanLent"><img src="scotoe.jpg"></a></div>
+            </div>
+            <div id="zes" class="col m3 kaart card teal hoverable">
+              <div class="card-image"><a href="https://github.com/TimVanLent"><img src="background2.jpg"></a></div>
+            </div>
+          </div>
+          <div class="row">         </div>
+        </div>
+        <div id="nomargin" class="hide-on-large-only">
+          <div class="row">         </div>
+          <div id="scroll">
+            <div class="wrap">
+              <div id="een" class="col s2 kaart card teal hoverable">
+                <div class="card-image"><a href="https://github.com/TimVanLent"><img src="background3.jpg"></a></div>
+              </div>
+              <div id="twee" class="col s2 kaart card red hoverable">
+                <div class="card-image"><a href="https://github.com/TimVanLent"><img src="background2.jpg"></a></div>
+              </div>
+              <div id="drie" class="col s2 kaart card red hoverable">
+                <div class="card-image"><a href="https://github.com/TimVanLent"><img src="background3.jpg"></a></div>
+              </div>
+              <div id="vier" class="col s2 kaart card red hoverable">
+                <div class="card-image"><a href="https://github.com/TimVanLent"><img src="grey.jpg"></a></div>
+              </div>
+              <div id="vijf" class="col s2 kaart card red hoverable">
+                <div class="card-image"><a href="https://github.com/TimVanLent"><img src="scotoe.jpg"></a></div>
+              </div>
+              <div id="zes" class="col s2 kaart card teal hoverable">
+                <div class="card-image"><a href="https://github.com/TimVanLent"><img src="background2.jpg"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img id="concrete" src="Office-Wallpaper.jpg" alt="Unsplashed background img 3"></div>
+      <canvas id="canvas3" width="100" height="100" class="canvas3"></canvas>
+    </div>
+    <footer id="footer" class="page-footer teal">
+      <div class="container center">
+        <div class="section center">
+          <!-- Icon Section-->
+          <div class="row center">
+            <div class="col s12">
+              <h5 class="left-align white-text thin">contact</h5>
+              <p id="contact" class="left-align thin">lentvantim@hotmail.com</p>
+            </div>
+            <div class="col s6 left-align"><a href="https://nl.linkedin.com/in/tim-van-lent-73b68b80"><img src="linkedin2.png" class="linkedinwit"></a><a href="https://github.com/TimVanLent"><img src="linkedinzwart.png" href="https://github.com/TimVanLent" class="linkedinzwart"></a></div>
+            <div class="col s4 m2"><a href="https://github.com/TimVanLent"><img src="githubwit.png" class="githubwit"></a><img src="githubzwart.png" href="https://github.com/TimVanLent" class="githubzwart"></div>
+            <div class="col s2"></div>
+          </div>
+          <div class="row"></div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row right-align">Made by me</div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+  </body>
+</html>
+<script>
+  function draw() {
+    var canvas = document.getElementById('canvas');
+    var canvas2 = document.getElementById('canvas2');
+    var canvas3 = document.getElementById('canvas3');
+    if (canvas.getContext){
+      var ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#26a69a';
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(100,0);
+      ctx.lineTo(100,35);
+      ctx.shadowBlur = 8;
+      ctx.shadowOffsetY = 2;
+      ctx.shadowColor = "black";
+      ctx.fill();
+      var ctq = canvas2.getContext('2d');
+      ctq.fillStyle = '#212121';
+      ctq.beginPath();
+      ctq.moveTo(0,100);
+      ctq.lineTo(0,65);
+      ctq.lineTo(100,100);
+      ctq.shadowBlur = 8;
+      ctq.shadowOffsetY = 2;
+      ctq.shadowColor = "black";
+      ctq.fill();
+      var ctr = canvas3.getContext('2d');
+      ctr.fillStyle = '#26a69a';
+      ctr.beginPath();
+      ctr.moveTo(0,100);
+      ctr.lineTo(0,65);
+      ctr.lineTo(100,100);
+      ctr.shadowBlur = 8;
+      ctr.shadowOffsetY = 2;
+      ctr.shadowColor = "black";
+      ctr.fill();
+    }
+  }
+  $('#een , #twee , #drie, #vier, #vijf, #zes').hover(function(){
+    $(this).siblings().not("this").toggleClass('kaart', 1000).css("opacity", 0.5);
+  })
+  $('.grijs').hover(function(){
+    $(".canvas").toggleClass('canvasRL');
+    $(".canvas2").toggleClass('canvasLR');
+  })
+  $("#footer").hover(function(){
+    $(".canvas3").toggleClass('canvasLR');
+  })
+
+
+</script>
