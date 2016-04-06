@@ -1,0 +1,25 @@
+specifications.txt
+
+purpose: crate a webapplication which cleans out an css file by removing all the unused selectors from it.
+
+the problem: when you use a template theres often a very very large css file included of which the biggest part is not used. Loading a page would be a great deal faster when this dead code is not to be loaded along with the site.
+
+targte audience: all kinds of webdevelopers. The once who will make a lot of code themselves and the onces who need to get rid of the css code from a template.
+
+buisinessmodel: non-profit. freeware.
+
+costs: time
+
+current competition: google
+
+how is my product different from available competitiors: its free!
+
+technical specifications:
+Its all code. if it eventually works properly. There will be a website on which you can enter a URL of your page after which a css will pop out. 
+
+milestones:
+1: make it work on blogapp √
+2: make it work on personalwebsite ..
+3: turn it into an site ..
+
+hope ill be done by halfway this week.

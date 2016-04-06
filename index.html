@@ -6,8 +6,8 @@
     <title>timvanlent</title>
     <!-- CSS-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="/src/views/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="/src/views/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="/src/views/css/clean.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="schijt.css" type="text/css" rel="stylesheet" media="screen,projection">    
   </head>
   <body onload="draw();">
     <div id="index-banner" class="banner1 parallax-container">
@@ -155,57 +155,88 @@
     <!-- Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="/src/views/js/materialize.js"></script>
-    <script src="/src/views/js/init.js"></script>
+    <script>
+      (function($){
+  $(function(){
+    $('.button-collapse').sideNav();
+    $('.parallax').parallax();
+
+var stickyNavTop = $('#canvas2').offset().top;
+ 
+var stickyNav = function(){
+var scrollTop = $(window).scrollTop();
+      
+if (scrollTop > stickyNavTop) { 
+    $('#nav2').removeClass('nav2')
+    $('#nav2').show(400);
+    $('#nav2').addClass('sticky');
+    $('.navbarItem').addClass('appear');
+} else {
+  $('#nav2').hide();
+    $('#nav2').removeClass('sticky'); 
+    $('.navbarItem').removeClass('appear');
+}
+};
+ 
+stickyNav();
+ 
+$(window).scroll(function() {
+    stickyNav();
+});
+
+
+  }); // end of document ready
+})(jQuery); // end of jQuery name space
+
+      function draw() {
+        var canvas = document.getElementById('canvas');
+        var canvas2 = document.getElementById('canvas2');
+        var canvas3 = document.getElementById('canvas3');
+        if (canvas.getContext){
+          var ctx = canvas.getContext('2d');
+          ctx.fillStyle = '#26a69a';
+          ctx.beginPath();
+          ctx.moveTo(0,0);
+          ctx.lineTo(100,0);
+          ctx.lineTo(100,35);
+          ctx.shadowBlur = 8;
+          ctx.shadowOffsetY = 2;
+          ctx.shadowColor = "black";
+          ctx.fill();
+          var ctq = canvas2.getContext('2d');
+          ctq.fillStyle = '#212121';
+          ctq.beginPath();
+          ctq.moveTo(0,100);
+          ctq.lineTo(0,65);
+          ctq.lineTo(100,100);
+          ctq.shadowBlur = 8;
+          ctq.shadowOffsetY = 2;
+          ctq.shadowColor = "black";
+          ctq.fill();
+          var ctr = canvas3.getContext('2d');
+          ctr.fillStyle = '#26a69a';
+          ctr.beginPath();
+          ctr.moveTo(0,100);
+          ctr.lineTo(0,65);
+          ctr.lineTo(100,100);
+          ctr.shadowBlur = 8;
+          ctr.shadowOffsetY = 2;
+          ctr.shadowColor = "black";
+          ctr.fill();
+        }
+      }
+      $('#een , #twee , #drie, #vier, #vijf, #zes').hover(function(){
+        $(this).siblings().not("this").toggleClass('kaart', 1000).css("opacity", 0.5);
+      })
+      $('.grijs').hover(function(){
+        $(".canvas").toggleClass('canvasRL');
+        $(".canvas2").toggleClass('canvasLR');
+      })
+      $("#footer").hover(function(){
+        $(".canvas3").toggleClass('canvasLR');
+      })
+    </script>
+
+
   </body>
 </html>
-<script>
-  function draw() {
-    var canvas = document.getElementById('canvas');
-    var canvas2 = document.getElementById('canvas2');
-    var canvas3 = document.getElementById('canvas3');
-    if (canvas.getContext){
-      var ctx = canvas.getContext('2d');
-      ctx.fillStyle = '#26a69a';
-      ctx.beginPath();
-      ctx.moveTo(0,0);
-      ctx.lineTo(100,0);
-      ctx.lineTo(100,35);
-      ctx.shadowBlur = 8;
-      ctx.shadowOffsetY = 2;
-      ctx.shadowColor = "black";
-      ctx.fill();
-      var ctq = canvas2.getContext('2d');
-      ctq.fillStyle = '#212121';
-      ctq.beginPath();
-      ctq.moveTo(0,100);
-      ctq.lineTo(0,65);
-      ctq.lineTo(100,100);
-      ctq.shadowBlur = 8;
-      ctq.shadowOffsetY = 2;
-      ctq.shadowColor = "black";
-      ctq.fill();
-      var ctr = canvas3.getContext('2d');
-      ctr.fillStyle = '#26a69a';
-      ctr.beginPath();
-      ctr.moveTo(0,100);
-      ctr.lineTo(0,65);
-      ctr.lineTo(100,100);
-      ctr.shadowBlur = 8;
-      ctr.shadowOffsetY = 2;
-      ctr.shadowColor = "black";
-      ctr.fill();
-    }
-  }
-  $('#een , #twee , #drie, #vier, #vijf, #zes').hover(function(){
-    $(this).siblings().not("this").toggleClass('kaart', 1000).css("opacity", 0.5);
-  })
-  $('.grijs').hover(function(){
-    $(".canvas").toggleClass('canvasRL');
-    $(".canvas2").toggleClass('canvasLR');
-  })
-  $("#footer").hover(function(){
-    $(".canvas3").toggleClass('canvasLR');
-  })
-
-
-</script>
